@@ -102,7 +102,7 @@ const database = {
 }
 
 //create get functions for the 5 arrays above that uses map to create a new array for the various arguments
-
+// these functions access the database with dot notation and the map method to return a new array of each argument
 export const getPaintColor = () => {
     return database.paintColors.map(color => ({ ...color }))
 }
